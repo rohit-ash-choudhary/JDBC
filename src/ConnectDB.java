@@ -14,7 +14,7 @@ public class ConnectDB {
 
 
             /*Step -1 to load the driver */
-        Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             /* Step 2 - to create a connection */
             Connection con=DriverManager.getConnection(url,username, password);
