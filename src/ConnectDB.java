@@ -46,3 +46,9 @@ public class ConnectDB {
 
     }
 }
+
+/*
+To call query :  stmt.executeUpdate()
+To update Query / create table :stmt.executeUpdate(q);
+
+ */
