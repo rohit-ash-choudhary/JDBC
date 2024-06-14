@@ -9,6 +9,17 @@ public class CreateTable {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
+        String filename="rest.tefrf.text";
+        int number_of_extensions=filename.split("\\.").length;
+        if(number_of_extensions>=3)
+        {
+            System.out.println("file have multi extension");
+        }
+        else {
+            System.out.println("file uploaded successfully");
+        }
+
+
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         Connection con=DriverManager.getConnection(url, dbname,pass);
@@ -17,6 +28,8 @@ public class CreateTable {
 
         Statement st=con.createStatement();
         st.executeUpdate(q);
+
+
 
     }
 }

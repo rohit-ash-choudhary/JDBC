@@ -9,7 +9,7 @@ public class ConnectDB {
     static String databasename="StudentDatabase";
     static String url="jdbc:mysql://localhost:3306/"+databasename;
     static String username="root";
-    static String password="Rooh@#2001";
+    static String password="SH";
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
 
